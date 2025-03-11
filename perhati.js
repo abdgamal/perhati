@@ -1,16 +1,3 @@
-if(sessionStorage.getItem("namauser")==undefined || sessionStorage.getItem("namauser")==null)
-{
-$('#loginx').html('LOGIN | SIGNUP');
-}
-else
-{
-var nama=sessionStorage.getItem("nama");
-var id=sessionStorage.getItem("id");
-
-$('#loginx').html('<span>'+nama+' |</span> <span style="cursor:pointer;color:red"> LOGOUT</span>');
-profil(id);
-}
-
 function anggota()
 {
 $('#tutup1').click();
